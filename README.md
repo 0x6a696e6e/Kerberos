@@ -21,18 +21,22 @@ messages are trusted objects in the AD domain. The Kerberos
 authentication service is made up of many key elements,
 including the following elements reproduced from the Kerberos
 authentication overview page at https://docs.axway.com:
+
 1 - •  Key Distribution Center (KDC) A service that is
 configured on a domain controller (such as Active
 Directory on Windows) that provides two domain-related
 services:
+
 2 - •  Authentication Service (AS) Authenticates the
 Kerberos client against the user database and grants a
 Ticket Granting Ticket (TGT) to the client.
+
 3 - •  Ticket Granting Service (TGS) Acts as the trusted
 third party for the Kerberos protocol to validate access
 for the client to the requested Kerberos service. Once
 validated, the client is issued a service ticket for that
 service.
+
 4 - •  Ticket Granting Ticket (TGT) An encrypted
 identification ticket used for traffic protection. The TGT
 has a variable expiration date and is used to obtain a
@@ -41,13 +45,16 @@ the secret key of the TGS and contains the client/TGS
 session key, its expiration date, and the IP address of the
 client, which protects the client from man-in-the-middle
 attacks.
+
 5 - •  Service ticket A ticket that is encrypted with the secret
 key of the Kerberos service and contains the client ID,
 client network address, validity period, and client/server
 session key. A Kerberos client obtains a service ticket from
 the TGS after presenting a valid TGT.
+
 6 - •  Kerberos client An application or end user requesting
 access to the Kerberos service.
+
 7 - •  Kerberos service A server or an application providing a
 service (web, database, file, etc.) that the Kerberos client
 would like to access.
