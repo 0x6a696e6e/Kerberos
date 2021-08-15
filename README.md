@@ -1,9 +1,11 @@
 # Kerberos
 
 **KERBEROS**
-Similar to NTLMv2, **Kerberos** is a mutual authentication
+Similar to NTLMv2,
+ **Kerberos** is a mutual authentication
 method that has been the default Active Directory
-authentication method since Windows 2000. The Kerberos
+authentication method since Windows 2000.
+The Kerberos
 network authentication protocol utilizes a ticketing system to
 allow users and computers defined in an AD domain to identify
 one another over the network in a secure fashion. The Kerberos
